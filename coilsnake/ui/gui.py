@@ -336,12 +336,13 @@ class CoilSnakeGui(object):
             base_rom_rom.from_file(base_rom)
             if base_rom_rom.type in ROM_TYPE_GROUP_EBM2 and len(base_rom_rom) == 0x300000:
                 confirm = tkinter.messagebox.askquestion(self.guistrings.get("ask_expand_rom"),
-                                                   self.guistrings.get("attempt_compile"),
-                                                   self.guistrings.get("attempt_compile_2"),
-                                                   self.guistrings.get("attempt_compile_3"),
-                                                   "\n\n",
-                                                   self.guistrings.get("ask_expand_base"),
-                                                   self.guistrings.get("ask_expand_base_2"),
+                                                   self.guistrings.get("attempt_compile")
+                                                   + self.guistrings.get("attempt_compile_2")
+                                                   + self.guistrings.get("attempt_compile_3")
+                                                   # askquestion() takes from 0 to 2 positional arguments
+                                                   + "\n\n",
+                                                   + self.guistrings.get("ask_expand_base")
+                                                   + self.guistrings.get("ask_expand_base_2"),
                                                    icon='warning')
                 if confirm == "yes":
                     base_rom_rom.expand(0x400000)

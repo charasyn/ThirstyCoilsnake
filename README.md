@@ -2,11 +2,11 @@
 
 ![You engage the OctoCat.](https://pk-hack.github.io/CoilSnake/images/screenshots/octocat-battle.png)
 
-**Thirsty CoilSnake** is the most powerful [mod making tool](https://en.wikipedia.org/wiki/Game_mod) for the game
-[*MOTHER 2*](https://en.wikipedia.org/wiki/EarthBound). It is a fork of CoilSnake for MOTHER 2 instead of EarthBound.
-Thirsty CoilSnake deconstructs the game's assets into individual text and PNG files, and then lets you "build" a new ROM
+**CoilSnake** is the most powerful [mod making tool](https://en.wikipedia.org/wiki/Game_mod) for the game
+[*EarthBound*](https://en.wikipedia.org/wiki/EarthBound).
+CoilSnake deconstructs the game's assets into individual text and PNG files, and then lets you "build" a new ROM
 using modified assets.
-Most of the game's data is editable by Thirsty CoilSnake, making it possible to create entirely new games in the *MOTHER 2*
+Most of the game's data is editable by CoilSnake, making it possible to create entirely new games in the *EarthBound*
 engine.
 
 ### Download
@@ -18,7 +18,7 @@ Download and usage instructions for Windows and Linux can be found on the
 
 * **I can't decompile the script**
 
-  Make sure that you decompile a vanilla MOTHER 2 ROM _first_, so that the assets get decompiled first, and then try to decompile the script. The ccscript folder won't get populated until you decompile the ROM first.
+  Make sure that you decompile a vanilla EarthBound ROM _first_, so that the assets get decompiled first, and then try to decompile the script. The ccscript folder won't get populated until you decompile the ROM first.
 * **Fatal error detected: Failed to execute script gui**
 
   This issue is caused due to a corrupted CoilSnake preferences file (possibly caused by old version of CoilSnake being used before). To fix it, browse your user directory ("C:/Users/{your user name}" in Windows) and delete the file named ".coilsnake.yml". Then open CoilSnake again.
