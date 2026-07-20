@@ -25,12 +25,12 @@ PALETTE_POINTER_TABLE_OFFSET = 0xEF62FD #EF10FB
 class TilesetModule(EbModule):
     NAME = "Tilesets"
     FREE_RANGES = [(0x17c600, 0x17fbe7),
-                   (0x190000, 0x19fc17),
-                   (0x1b0000, 0x1bf2ea),
-                   (0x1c0000, 0x1cd636),
-                   (0x1d0000, 0x1dfecd),
-                   (0x1e0000, 0x1ef0e6),
-                   (0x1f0000, 0x1fc242)]
+                   (0x190000, 0x19fc16), #0x19fc17
+                   (0x1b0000, 0x1bf2d3), #0x1bf2ea 
+                   (0x1c0000, 0x1cd633), #0x1cd636
+                   (0x1d0000, 0x1dff28), #0x1dfecd
+                   (0x1e0000, 0x1ef08b), #0x1ef0e6
+                   (0x1f0000, 0x1fc20d)] #0x1fc242
 
     def __init__(self):
         super(TilesetModule, self).__init__()
