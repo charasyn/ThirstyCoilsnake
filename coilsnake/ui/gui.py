@@ -151,8 +151,8 @@ class CoilSnakeGui(object):
     def set_emulator_exe(self):
         tkinter.messagebox.showinfo(
             self.guistrings.get("select_emu_exe"),
-            self.guistrings.get("coilsnake_use_emu"),
-            self.guistrings.get("emu_hint")
+            + self.guistrings.get("coilsnake_use_emu")
+            + self.guistrings.get("emu_hint")
         )
 
         emulator_exe = tkinter.filedialog.askopenfilename(
