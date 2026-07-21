@@ -1,6 +1,8 @@
 import logging
 import re
 from coilsnake.exceptions.common.exceptions import InvalidArgumentError
+from coilsnake.ui.language import global_strings as strings
+from coilsnake.ui.language import getLogger
 
 log = logging.getLogger(__name__)
 
@@ -53,11 +55,11 @@ class PointerReference:
 
     def read(self, rom):
         address = self.READ_IMPL(rom, self.offset)
-        log.info("Read %s at %#x, value is %#06x", self.POINTER_STR, self.offset, address)
+        log.info(strings.get("console_read_asm_pointer"), self.POINTER_STR, self.offset, address)
         return address
 
     def write(self, rom, address):
-        log.info("Writing %s at %#x, value is %#06x", self.POINTER_STR, self.offset, address)
+        log.info(strings.get("console_write_asm_pointer"), self.POINTER_STR, self.offset, address)
         self.WRITE_IMPL(rom, self.offset, address)
 
 

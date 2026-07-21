@@ -341,8 +341,7 @@ class TitleScreenModule(EbModule):
                 )
             if self.bg1_arrangement != arrangement:
                 log.warn(
-                    "Arrangement from background frame {} does not match "
-                    "reference.".format(frame)
+                    strings.get("console_warning_tileset_arrangement").format(frame)
                 )
 
         # BG2
@@ -374,13 +373,11 @@ class TitleScreenModule(EbModule):
 
             if self.bg2_tileset != tileset:
                 log.warn(
-                    "Tileset from background frame {} does not match "
-                    "reference.".format(frame)
+                    strings.get("console_warning_tileset_reference").format(frame)
                 )
             if self.bg2_arrangement != arrangement:
                 log.warn(
-                    "Arrangement from background frame {} does not match "
-                    "reference.".format(frame)
+                    strings.get("console_warning_tileset_arrangement").format(frame)
                 )
 
         # Fix up BG2 arrangement to use the correct palettes.
@@ -504,8 +501,7 @@ class TitleScreenModule(EbModule):
 
             elif original_tileset != tileset:
                 log.warn(
-                    "Tileset from characters frame {} does not match "
-                    "tileset from characters frame 0.".format(p)
+                    strings.get("console_warning_tileset_frame_zero").format(p)
                 )
 
     def write_to_project(self, resource_open):

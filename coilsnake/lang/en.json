@@ -139,6 +139,7 @@
     "console_error_config_inst_def": "Error at line {} in config.txt: expected instrument definition",
     "console_error_config_line": "Error at line {} in config.txt: expecting '{{'",
     "console_warning_tileset_reference": "Tileset from background frame {} does not match reference.",
+    "console_warning_tileset_arrangement": "Arrangement from background frame {} does not match reference.",
     "console_read_pointer_tbls": "Reading pointer tables",
     "console_read_tileset": "Reading tileset #{}",
     "console_read_pal": "Reading palettes",
@@ -151,7 +152,23 @@
     "console_read_pal_settings": "Reading palette settings",
     "console_yml_game_unset": "YAML table load function called with game unset - falling back to last loaded (%s)",
     "console_attempt_game_table": "Attempted to create a table for a game without a YAML file.",
-    "console_relocate_song_to_address": "Relocating song $%02X to address $%04X"
-
+    "console_relocate_song_to_address": "Relocating song $%02X to address $%04X",
+    "console_compiling_titlescreen": "Compiling Title Screen...",
+    "console_warning_tileset_frame_zero": "Tileset from characters frame {} does not match tileset from characters frame 0.",
+    "console_write_asm_pointer": "Writing %s at %#x, value is %#06x",
+    "console_read_asm_pointer": "Read %s at %#x, value is %#06x",
+    "console_read_town_maps": "Reading town maps",
+    "console_write_town_maps": "Writing town maps",
+    "console_read_town_map_icons": "Reading town map icons",
+    "console_read_town_map_icons_2": "- Reading town map icons",
+    "console_write_town_map_icons": "Writing town map icons",
+    "console_read_company_logos": "Reading company logos",
+    "console_write_company_logos": "Writing company logos",
+    "console_read_attract_mode_logos": "Reading attract mode logos",
+    "console_write_attract_mode_logos": "Writing attract mode logos",
+    "console_read_gas_station_logo": "Reading gas station logo",
+    "console_read_gas_station_logo_2": "- Reading gas station logo",
+    "console_write_gas_station_logo": "Writing gas station logo",
+    "console_reading": "- Reading {}"
   }
 
