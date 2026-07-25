@@ -638,7 +638,7 @@ class CoilSnakeGui(object):
         about_right_frame.pack(side=LEFT, fill=BOTH, expand=1)
 
         self.about_menu.resizable(False, False)
-        self.about_menu.title("About CoilSnake {}".format(information.VERSION))
+        self.about_menu.title("About Thirsty CoilSnake {}".format(information.VERSION))
         self.about_menu.withdraw()
         self.about_menu.transient(self.root)
 

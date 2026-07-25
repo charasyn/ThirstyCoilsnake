@@ -8,19 +8,19 @@ except:
 VERSION = project.VERSION_NAMES[project.FORMAT_VERSION]
 if GIT_COMMIT:
     VERSION = f"{VERSION}-next-{GIT_COMMIT}"
-RELEASE_DATE = "March 19, 2023"
+RELEASE_DATE = "July 22, 2026"
 
 WEBSITE = "http://pk-hack.github.io/CoilSnake"
-AUTHOR = "the PK Hack community"
+AUTHOR = "the PK Hack community. (Forked from CoilSnake 4.2)"
 ADDITIONAL_CREDITS = """- Some portions based on JHack, created by AnyoneEB
 - Contributions by H.S, Michael1, John Soklaski,
   João Silva, ShadowOne333, stochaztic, Catador,
   cooprocks123e, and many others"""
 DEPENDENCIES = [
-    {"name": "CoilSnake logo and icon",
+    {"name": "Thirsty CoilSnake logo and icon",
      "author": "Rydel & Gabbi"},
-    {"name": "CoilSnake 4 logo",
-     "author": "livvy94"},
+    {"name": "Thirsty CoilSnake 1 logo",
+     "author": "livvy94 and Gabbi"},
     {"name": "CCScript",
      "author": "Mr. Accident",
      "url": "http://starmen.net/pkhack/ccscript"},
@@ -40,7 +40,7 @@ DEPENDENCIES = [
 
 
 def coilsnake_about():
-    description = f"""CoilSnake {VERSION} - {WEBSITE}
+    description = f"""Thirsty CoilSnake {VERSION} - {WEBSITE}
 Created by {AUTHOR}
 Released on {RELEASE_DATE}
 """
